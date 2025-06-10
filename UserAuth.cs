@@ -29,7 +29,7 @@ namespace Library
             {
                 MessageBox.Show("Вы успешно авторизованы", "Успех!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 User.Id = userId;
-                Windows.UserAccount.Show();
+                new UserAccount().Show();
                 LoginTb.Clear();
                 PasswordMtb.Clear();
                 Hide();

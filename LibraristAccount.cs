@@ -774,13 +774,12 @@ namespace Library
 
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-            Windows.LibraristAuth.Show();
-            Hide();
+            Close();
         }
 
         private void AdminAccountForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Windows.LibraristAuth.Show();
         }
     }
 }

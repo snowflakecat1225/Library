@@ -219,8 +219,7 @@ namespace Library
 
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-            Windows.UserAuth.Show();
-            Hide();
+            Close();
         }
 
         private void Clear_Click(object sender, EventArgs e)
@@ -246,7 +245,7 @@ namespace Library
 
         private void UserAccountForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            Windows.UserAuth.Show();
         }
 
         private void AddCell(PdfPTable table, string text, Font font, bool centered = false)
